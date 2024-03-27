@@ -15,7 +15,7 @@
    } 
     
    :root { 
-    --green: hsl(75, 94%, 57%); 
+    --green: hsl(93, 80%, 47%); 
     --white: hsl(0, 0%, 100%); 
     --grey: hsl(0, 0%, 20%); 
     --dark-grey: hsl(0, 0%, 12%); 
@@ -59,7 +59,7 @@
    } 
    .list .item a:hover { 
        color: black; 
-       background-color: greenyellow; 
+       background-color: rgb(109, 163, 28); 
    } 
    img { 
        width: 100%; 
@@ -89,7 +89,7 @@
        height: 100%; 
    } 
    .name { 
-       font-size: 1.55rem; 
+       font-size: 1.65rem; 
        margin-bottom: 0.65rem; 
    } 
    .address{ 
