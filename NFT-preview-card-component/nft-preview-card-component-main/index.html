@@ -2,32 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Equilibrium #3429</title>
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      background-color: #0d192c;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .profile {
+      background-color: #15263f;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 300px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      height: 500px;
+    }
+
+    .profile-image {
+      display: block;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .profile-text {
+      color: #fafbfd;
+      margin-top: 15px;
+    
+    }
+
+    .profile-text h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .profile-text p {
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .description {
+    margin: 0.6rem 0 1rem 0;
+    color: hsl(215, 51%, 70%);
+    line-height: 28px;
+    font-weight: 300;
+    }
+
+    .price {
+      color: #00fff7;
+      font-weight: bold;
+      border-bottom:2px solid hsl(215, 40%,40% );
+      
+    }
+
+    .time-left {
+      color: #8bacd9;
+      padding-left: 50%;
+    }
+
+    .creator {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .creator img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .value-days{
+      display: flex;
+      justify-content: space-between;
+      border-bottom:1px solid hsl(215, 32%, 27%);
+    }
+
+    .value {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(178, 100%, 50%);
+    }
+    .days {
+    display: flex;
+    justify-content: space-between;
+    color: hsl(215, 51%, 70%);
+    }
+    span {
+      color:hsl(215, 51%, 70%);
+      padding-right: 1% 
+    }
+    .attribution {
+          font-size: 11px;
+          text-align: bottom;
+          margin-bottom: 80px;
+          padding-top: 20%;
+          color:#fafbfd
+        }
+        .attribution a {
+          color: hsl(228, 45%, 44%); 
+        }
+    .profile-image:hover{
+     opacity: 0.7;
+    }
+    .profile-text h2:hover{
+     color: hsl(178, 100%, 50%);
+    }
+    .creator:hover{
+      color:hsl(178, 100%, 50%)
+    }
+
   </style>
 </head>
 <body>
+  <div class="profile">
+    <img class="profile-image" src="./images/image-equilibrium.jpg" alt="Equilibrium #3429">
 
-  Equilibrium #3429
+    <div class="profile-text">
+      <h2>Equilibrium #3429</h2>
+      <div class="description">Our Equilibrium collection promotes balance and calm.</div>
+      <div class="value-days">
+        <p class="value">
+          <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+          0.041ETH
+        </p>
+        <p class="days"> 
+          <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+          3 days left
+        </p>
+      </div>
+      <div class="creator">
+        <img src="./images/image-avatar.png" alt="Creator Avatar">
+        <span>Creation of </span>Jules Wyvern
 
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#"> Omu </a>.
+    </div>
+    </div>
   </div>
 </body>
 </html>

@@ -1,16 +1,135 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-  <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
- 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
-   
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <link rel="stylesheet" href="style.css"> 
-  <title>Frontend Mentor | Social links profile</title> 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 --> 
-</head> 
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{ 
+    font-family: 'Inter',sans-serif; 
+    font-size: 14px; 
+    font-optical-sizing: auto; 
+    font-style: normal; 
+    background-color: hsl(0, 0%, 8%); 
+    color: hsl(0, 0%, 100%); 
+    position: relative; 
+    min-height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+} 
+a { 
+    text-decoration: none; 
+     
+} 
+.list .item a { 
+    display: block; 
+    padding: 10px; 
+    border: 1px solid transparent; 
+    transition: border-color 0.3s ease; 
+    color: hsl(0, 0%, 100%); 
+    background-color: hsl(0, 0%, 20%); 
+    position: relative; 
+    border-radius: 8px; 
+} 
+.list .item a::after { 
+    content: ''; 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+} 
+.list .item a:hover { 
+    color: black; 
+    background-color: hsl(75, 94%, 57%); 
+} 
+img { 
+    width: 100%; 
+} 
+ul { 
+    list-style: none; 
+} 
+.attribution { 
+    display: none; 
+} 
+.profile-card { 
+    padding: 1.4rem; 
+    padding-bottom: 1.6rem; 
+    border-radius: .5rem; 
+    background-color: hsl(0, 0%, 12%); 
+    width: 326px; 
+    text-align: center; 
+} 
+.profile{ 
+    width: 90px; 
+    margin: 0 auto; 
+    margin-bottom: 1.4rem; 
+} 
+.profile img{ 
+    border-radius:100%; 
+    width: 100%; 
+    height: 100%; 
+} 
+.name { 
+    padding-left: 2rem;
+    font-size: 1.55rem; 
+    margin-bottom: 0.65rem; 
+} 
+.address{ 
+    padding-left: 2rem;
+    color: hsl(75, 94%, 57%); 
+    font-size: 0.85rem; 
+    letter-spacing: 0.3px; 
+    margin-bottom: 1.75rem; 
+} 
+.description{ 
+    padding-left: 2rem;
+    margin-bottom: 1.5rem; 
+} 
+.item:not(:last-of-type){ 
+    width: 100%; 
+    margin-bottom: 1rem; 
+} 
+.card_item-link { 
+ display: inline-block; 
+ border-radius: 0.5rem; 
+ background-color: hsl(75, 94%, 57%); 
+ color: hsl(0, 0%, 100%); 
+ font-weight: bold; 
+ padding-block: 0.88rem; 
+ width: 100%; 
+ height: 100%; 
+ transition: background .3s, color .3s; 
+} 
+ 
+.card_item-link:hover { 
+ background-color: hsl(75, 94%, 57%); 
+ color: hsl(0, 0%, 20%); 
+} 
+.card { 
+    border: 1px solid  hsl(0, 0%, 100%); 
+    padding: 2rem 2.5rem; 
+ 
+    border-radius: .5rem; 
+    opacity: 0.6; 
+    background-color: hsl(0, 0%, 20%); 
+    width: 380px; 
+    text-align: center; 
+}
+
+
+  </style>
+</head>
 <body> 
   <main class="profile-card"> 
     <div class="profile"> 
@@ -44,4 +163,3 @@
   </div>
 </body>
 </html>
-
