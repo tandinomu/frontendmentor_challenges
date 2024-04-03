@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Name:<input id="text">
+
+    <button id="add">Add</button></p>
+
+    <ul id="nameList"></ul>
+    
+    <script>
+        document.getElementById('add').addEventListener('click', function() {
+            const name = document.getElementById('text').value;
+            if (name) {
+                const listItem = document.createElement('li');
+                listItem.textContent = name;
+
+                const deleteButton = document.createElement('button');
+                deleteButton.textContent = 'Delete';
+                deleteButton.addEventListener('click', function() {
+                    this.parentElement.remove();
+                });
+
+                listItem.appendChild(deleteButton);
+                document.getElementById('nameList').appendChild(listItem);
+
+                document.getElementById('text').value = '';
+            }
+        });
+    </script>
+</body>
+</html>
