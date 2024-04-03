@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+</head>
+<body>
+    <p>Val 1:</p>
+    <input id="valueOne">
+
+    <p>Val 2:</p>
+    <input id="valueTwo">
+    <br>
+    <br>
+    <button id="addButton">
+        Add
+    </button>
+
+    <button id="subtractButton">
+        Subtract
+    </button>
+
+    <button id="multiplyButton">
+        Multiply
+    </button>
+
+    <button id="divideButton">
+        Divide
+    </button>
+
+    <p id="result">Result:</p>
+
+    <script>
+        document.getElementById('addButton').addEventListener('click', function() {
+            const valueOne = document.getElementById('valueOne').value;
+            const valueTwo = document.getElementById('valueTwo').value;
+            
+            const sum = parseInt(valueOne) + parseInt(valueTwo);
+
+            document.getElementById('result').textContent = "Result: " + sum;
+        });
+
+        document.getElementById('subtractButton').addEventListener('click', function() {
+            const valueOne = document.getElementById('valueOne').value;
+            const valueTwo = document.getElementById('valueTwo').value;
+            
+            const difference = parseInt(valueOne) - parseInt(valueTwo);
+
+            document.getElementById('result').textContent = "Result: " + difference;
+        });
+
+        document.getElementById('multiplyButton').addEventListener('click', function() {
+            const valueOne = document.getElementById('valueOne').value;
+            const valueTwo = document.getElementById('valueTwo').value;
+            
+            const product = parseInt(valueOne) * parseInt(valueTwo);
+
+            document.getElementById('result').textContent = "Result: " + product;
+        });
+
+        document.getElementById('divideButton').addEventListener('click', function() {
+            const valueOne = document.getElementById('valueOne').value;
+            const valueTwo = document.getElementById('valueTwo').value;
+            
+            if (parseInt(valueTwo) === 0) {
+                document.getElementById('result').textContent = "Error: Division by zero is not allowed.";
+                return;
+            }
+            
+            const quotient = parseFloat(valueOne) / parseFloat(valueTwo);
+
+            document.getElementById('result').textContent = "Result: " + quotient;
+        });
+    </script>
+</body>
+</html>
